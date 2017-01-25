@@ -11,7 +11,7 @@
 1. Raytraced reflections and refractions
 2. Analytic ambient occlusion
 3. Heightfield water simulation *
-4. Soft shadows
+4. Soft shadows  
 ___* requires the [OES_texture_float](https://developer.mozilla.org/zh-CN/docs/Web/API/OES_texture_float) extension___
 
 # Install
