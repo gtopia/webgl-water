@@ -15,31 +15,12 @@
 ___* requires the [OES_texture_float](https://developer.mozilla.org/zh-CN/docs/Web/API/OES_texture_float) extension___
 
 # Install
-### CNPM
 ```
-$ npm install cnpm -g --registry=https://registry.npm.taobao.org
-```
-### Dependencies
-```
-$ cnpm install
-$ cnpm install cross-env -g
-$ cnpm install http-server -g
-$ cnpm install webpack-dashboard -g
-$ cnpm install webpack-dev-server -g
-$ cnpm install webpack@1.13.0 -g
+$ npm install
 ```
 
 # Run
-### Non-ie env
 ```
-$ npm run dev-build
+$ npm run dev
 ```
-### IE env
-```
-$ npm run dev-ie-build
-$ npm run dev-ie-server
-```
-### Online
-```
-$ npm run build
-```
+_Default port number is 8000._
