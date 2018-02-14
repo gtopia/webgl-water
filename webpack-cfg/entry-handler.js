@@ -22,7 +22,7 @@ module.exports = {
     },
     transform: (isDev, entryObj) => {
         let addr = '127.0.0.1',
-            port = '80';
+            port = '8000';
         if (!isDev) {
             return entryObj;
         }
