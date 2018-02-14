@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-    publicPath: 'http://test.local.com.cn/', //已http或者https开头的绝对地址，绑定此域名到本地hosts
+    publicPath: 'http://localhost:8000/', //已http或者https开头的绝对地址，绑定此域名到本地hosts
     onLinePublicPath: 'http://xxx/', //线上静态资源地址
-    md5: 'chunkhash', //false：不加md5值；hash：全部资源公用一个hash；chunkhash：单文件一个hash值
+    md5: false, //false：不加md5值；hash：全部资源公用一个hash；chunkhash：单文件一个hash值
     //雪碧图的配置
     sprites: [{
         //生成雪碧图的文件名字，该文件夹在pages下生成，eg: pages/sprite/normal,
