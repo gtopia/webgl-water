@@ -1881,6 +1881,7 @@ Texture.fromURL = function(url, options) {
   var texture = Texture.fromImage(checkerboardCanvas, options);
   var image = new Image();
   var context = gl;
+  image.crossOrigin = "Anonymous";
   image.onload = function() {
     context.makeCurrent();
     Texture.fromImage(image, options).swapWith(texture);

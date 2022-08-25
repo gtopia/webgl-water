@@ -42,7 +42,7 @@ module.exports = (mode, htmlPlugins, cssPlugin) => {
                 }
             }),
             // 文件夹清理
-            new CleanWebpackPlugin(['assets'], {
+            new CleanWebpackPlugin(['dist'], {
                 root: path.resolve(__dirname, '..'),
                 verbose: true
             }),
@@ -51,14 +51,7 @@ module.exports = (mode, htmlPlugins, cssPlugin) => {
             //     relativePath:"./img/"
             // })
         ]);
-    } else if (mode === 'developmentIE') {
-        list.push(
-            new CleanWebpackPlugin(['test'], {
-                root: path.resolve(__dirname, '..'),
-                verbose: true
-            }),
-            new OpenBrowserPlugin({url:config.publicPath})
-        );
     }
+
     return list;
 };
